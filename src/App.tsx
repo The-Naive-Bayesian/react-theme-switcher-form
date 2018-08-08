@@ -8,9 +8,11 @@ class App extends React.Component {
         return (
             <div className="App">
                 <main>
-                    <Card>
+                    <div className={'buffer'}/>
+                    <Card styles={{margin: 'auto'}}>
                         <Form/>
                     </Card>
+                    <div className={'buffer'}/>
                 </main>
             </div>
         );
