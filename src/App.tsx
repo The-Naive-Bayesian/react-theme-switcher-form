@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import Card from "./components/card";
+import Form from "./components/form";
 
 class App extends React.Component {
     public render() {
@@ -8,7 +9,7 @@ class App extends React.Component {
             <div className="App">
                 <main>
                     <Card>
-                        Content
+                        <Form/>
                     </Card>
                 </main>
             </div>

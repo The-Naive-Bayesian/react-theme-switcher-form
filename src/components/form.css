@@ -1,0 +1,26 @@
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 1em;
+    margin: 1em 0;
+}
+
+button {
+    padding: 1em;
+    margin: 1em 0;
+    border: 0;
+    background: lightgray;
+    box-shadow: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
