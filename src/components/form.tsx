@@ -8,7 +8,10 @@ class Form extends React.Component {
                 <h2>Login</h2>
                 <input type={'email'} name={'email'} placeholder={'email'}/>
                 <input type={'password'} name={'password'} placeholder={'password'}/>
-                <button type={'submit'}>Log In</button>
+                <div className={'button-group'}>
+                    <button type={'submit'} className={'primary'}>Log In</button>
+                    <button type={'button'}>Forgot Password</button>
+                </div>
             </form>
         );
     }

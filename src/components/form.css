@@ -14,13 +14,25 @@ input {
     margin: 1em 0;
 }
 
-button {
-    padding: 1em;
+.button-group {
+    display: flex;
+    flex-direction: row;
     margin: 1em 0;
-    border: 0;
-    background: lightgray;
+}
+
+button {
+    width: 15em;
+    margin-right: 1em;
+    padding: 1em;
     box-shadow: none;
     border-radius: 5px;
-    text-transform: uppercase;
+    border: none;
     cursor: pointer;
+    background: lightgray;
+    text-transform: uppercase;
+}
+
+button.primary {
+    background: cornflowerblue;
+    color: white;
 }
