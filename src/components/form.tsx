@@ -1,5 +1,6 @@
 import * as React from "react";
 import './form.css';
+import {Theme} from "./theme";
 
 class Form extends React.Component {
     public render() {
@@ -8,10 +9,18 @@ class Form extends React.Component {
                 <h2>Login</h2>
                 <input type={'email'} name={'email'} placeholder={'email'}/>
                 <input type={'password'} name={'password'} placeholder={'password'}/>
-                <div className={'button-group'}>
-                    <button type={'submit'} className={'primary'}>Log In</button>
-                    <button type={'button'}>Forgot Password</button>
-                </div>
+                    <Theme>
+                        {style => (
+                            <div className={'button-group'}>
+                                <button type={'submit'} style={style.primary} className={'primary'}>
+                                    Log In
+                                </button>
+                                <button type={'button'} style={style.secondary}>
+                                    Forgot Password
+                                </button>
+                            </div>
+                        )}
+                    </Theme>
             </form>
         );
     }
